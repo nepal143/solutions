@@ -1,0 +1,41 @@
+body{
+    background: #E0FBF4;
+}
+.upper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+nav ul li{
+    margin: 0 20px;
+}
+.title1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.2vw;
+    color: #112A46;
+    margin-top:8% ;
+}
+.title2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.2vw;
+    color: #112A46;
+    margin-top: 2%;
+}
+@media screen and (max-width: 700px) {
+    
+}
+
+.solution-background-img{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
