@@ -4,9 +4,15 @@ body{
 }
 
 #sol{
+    /* position: relative; */
     position: absolute;
-    left: 60px;
-    top:30px;
+    top: 0;
+    left: 20px;
+    margin-top: 2%;
+    /* left: -25%; */
+    width: 100px;
+    height: 20px;
+
     
 }
 
@@ -22,13 +28,13 @@ nav div a{
     text-decoration: none;
     color: #112A46;
     letter-spacing: 2px;
-    padding: 1%;
+    padding: 10px;
     font-size: 1.2vw;
 }
 a:hover{
     /* border: solid 0.1em white; */
     border-radius: 40px;
-    padding: 1%;
+    padding: 10px;
     background-color: #B6EDE0;
 }
 
@@ -48,6 +54,12 @@ main h2{
 .events{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 700px){
+    nav{
+        display: none;
+    }
 }
 .events button:hover{
     color: white;
@@ -68,17 +80,26 @@ p{
     color: #525252;
     text-align: center;
 }
+.flex{
+    background-color: #001D1B;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
+}
 .grid{
     background-color: #001D1B;
-    display: grid;
-    grid-template-columns: 460px 460px 460px;
-    grid-template-rows: 160px 160px;
-    row-gap: 5px;
-    column-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* height: auto; */
+    margin: auto  50px;
+    align-items: center;
 }
 
 .a{
+    margin: 20px;
     text-align: center;
     color: #E0FBF4;
     font-family: 'Nunito', sans-serif;
@@ -86,12 +107,20 @@ p{
 }
 
 
-footer div a{
+footer div div a{
+    width: 200px;
     font-size: 12px;
     color: #E0FBF4;
     text-decoration: none;
 }
+footer div div a:hover{
+    border-radius: 40px;
+    /* padding: 10px; */
+    background-color: #B6EDE0;
+    color: black;
+}
 
 #vec{
     height: 100px;
+    margin-bottom: 20px;
 }
