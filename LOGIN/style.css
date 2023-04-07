@@ -9,10 +9,53 @@ body{
     font-family: 'Poppins', sans-serif; 
 
 }
+nav i{
+    visibility: hidden;
+    cursor: pointer;
+    float: right;
+    margin: 10px ;
 
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10%;
+    font-size: 0.8rem;
+    background: #E0FBF4;
+}
+
+
+
+nav div{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    justify-content: end;
+    
+}
+nav div a{
+    margin: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #112A46;
+    letter-spacing: 2px;
+    border: 0.1em white;
+    border-radius: 40px;
+    padding: 1%;
+    /* font-size: 1.2vw; */
+}
+nav div a:hover{
+    /* border: solid 0.1em white; */
+    border-radius: 40px;
+    padding: 1%;
+    background-color: #B6EDE0;
+}
 /* .navbar{
     background-color: rgb(100, 195, 195); */
-/* 
+
     footer div div a{
         width: 200px;
         font-size: 12px;
@@ -27,22 +70,22 @@ body{
     }
     .flex1{
         background-color: #001D1B;
-        height: 380px;
+        /* height: 380px; */
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
         
     }
-    /* footer{
+ footer{
         text-align: center;
         width: 100vw;
-    } */
+    }
     #vec{
         margin-bottom: 50px;
-    }
+    } 
     
-    
-    
+ 
+
     #vec{
         height: 100px;
         margin-bottom: 0;
@@ -58,29 +101,29 @@ body{
     }
     
     .a{
-        margin: 20px;
+        /* margin: 20px; */
         text-align: center;
         color: #E0FBF4;
         font-family: 'Nunito', sans-serif;
         margin-top: 20px;
     } */
-
-ul li{
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    position: relative;
-    margin: 5px;
+    ul li{
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        position: relative;
+        margin: 5px;
     z-index: 3;
     float: right;
-
+    
 }
 .main{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 100vw;    */
+    width: 100vw;   
+    margin-top: 80px;
     height: 100vh;
-
+    
 }
 img{
     width: 70%;
@@ -134,9 +177,9 @@ img{
 }
 /* .item2 h4{
     /* margin: ; */
-/* } */ 
-input{
-    width: 95%;/
+    /* } */ 
+    input{
+        width: 95%;
     height: 8px;
 }
 .input-field{
@@ -178,7 +221,7 @@ input{
     background-color: black;
     
     
-
+    
 }
 h4{
     text-align: center;
@@ -186,7 +229,7 @@ h4{
 h6{
     /* width: 100%; */
     text-align: center;
-
+    
 }
 .line2{
     display: flex;
@@ -219,9 +262,15 @@ h6{
     background: #5CAACB;
     padding: 1% 5%;
     color: white;
-
+    transition: 0.2s;
     cursor: pointer;
-
+    
+}
+.login:hover{
+    scale: 104%;
+}
+.in:hover{
+    scale: 104%;
 }
 .dont{
     display: flex;
@@ -237,6 +286,7 @@ h6{
     width: 60px;
     text-align: center;
     color: white;
+    transition: 0.2s;
     display: flex;
     cursor: pointer;
     justify-content: center;
@@ -252,3 +302,7 @@ h6{
     justify-content: space-between  ;
 }
 
+
+.pass{
+    cursor: pointer;
+}

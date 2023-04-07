@@ -96,7 +96,6 @@ p{
 
 .flex1{
     background-color: #001D1B;
-    /* display: flex; */
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -113,7 +112,7 @@ p{
 }
 
 .a{
-    margin: 20px;
+    /* margin: 20px; */
     text-align: center;
     color: #E0FBF4;
     font-family: nunito;

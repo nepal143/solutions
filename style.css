@@ -27,23 +27,26 @@ nav{
     background:#E0FBF4;
 }
 .nav1{
+    background-color:rgba(255, 255, 255, 0);
+    border:solid #65CFB5;
+    width: 150px;
+    background-color: #65CFB5;
+    height:20vh;
+    visibility: hidden;
     position: fixed;
     right: 0;
-    visibility: visible;
-    background: #E0FBF4;
-    width: 30vw;
-    height: 40vh;
-    border: solid  #B6EDE0;
-    border-radius: 0 0 0 20px;
+    border: solid #65CFB5;
+    border-radius: 0px 0px 0px 10px;
 }
 .toggle-list{
+    margin-top: -30px;
     visibility: hidden;
     list-style-type: none;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 .toggle-list-item{
-    margin-top: 10px;
+    display: block;
     margin: 10px 20px;
     font-weight: 600;
     text-decoration: none;
@@ -52,6 +55,7 @@ nav{
     border: 0.1em white;
     border-radius: 40px;
     padding: 2%;
+    cursor: pointer;
 }
 .toggle-list-item:hover{
     border-radius: 40px;
@@ -59,7 +63,7 @@ nav{
     background-color: #B6EDE0;
 }
 #toggle{
-    margin: 10px 10px ;
+    margin: -20PX 10px ;
 }
 /* nav .list{
     margin-right: -60px;
@@ -77,12 +81,13 @@ nav{
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 10%;
     font-size: 0.8rem;
     background: #E0FBF4;
 }
 
-
+nav ul a{
+    margin-top: 20px;
+}
 
 nav div{
     display: flex;
@@ -97,7 +102,6 @@ nav div a{
     text-decoration: none;
     color: #112A46;
     letter-spacing: 2px;
-    border: 0.1em white;
     border-radius: 40px;
     padding: 1%;
     /* font-size: 1.2vw; */
@@ -137,7 +141,6 @@ a:hover{
         visibility: visible;
     }
     .toggle-list{
-        /* display: unset; */
         visibility: visible;
     }
     /* nav .list{
@@ -151,6 +154,8 @@ a:hover{
         visibility: hidden;
         position: fixed;
         right: 0;
+        border: solid #65CFB5;
+        border-radius: 0px 0px 0px 10px;
     }
     .list1{
         display: none;
@@ -161,7 +166,21 @@ a:hover{
     .stat1  img{
         display: none;
     }
-    
+
+    .stat-container{
+        justify-content: center;
+    }
+    .stat{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.stat{
+    width: 60%;
+    margin: 50px 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 @media screen and (max-width:1000px) {
     .solution{
@@ -260,11 +279,11 @@ main{
     width: 150px;
 }
 .statistics{
-    width: 100%;
+    width: 100vw;
     background-color: #EDFFFE;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    padding: 20px;
+    /* padding: 20px; */
     font-family: 'Poppins', sans-serif;
 }
 .statistics h2{
@@ -284,12 +303,7 @@ main{
     margin: 10px;
     flex-wrap: wrap;
 }
-.stat{
-    width: 60%;
-    margin: 50px 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .s1{
     margin: 5px;
     width: 250px;
@@ -308,16 +322,15 @@ main{
 }
 .flex1{
     background-color: #001D1B;
-    height: 380px;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     
 }
-/* footer{
+footer{
     text-align: center;
     width: 100vw;
-} */
+}
 .grid1{
     background-color: #001D1B;
     display: flex;
@@ -329,7 +342,7 @@ main{
 }
 
 .a{
-    margin: 20px;
+    /* margin: 20px; */
     text-align: center;
     color: #E0FBF4;
     font-family: 'Nunito', sans-serif;
@@ -365,7 +378,7 @@ footer div div a:hover{
     scale: 104%;
 }
 #vec{
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 

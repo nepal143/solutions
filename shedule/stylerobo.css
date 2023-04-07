@@ -187,7 +187,7 @@ a:hover{
 }
 .flex1{
     background-color: #001D1B;
-    height: 380px;
+    /* height: 380px; */
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -210,7 +210,7 @@ a:hover{
     cursor: pointer;
 }
 .a{
-    margin: 20px;
+    /* margin: 20px; */
     text-align: center;
     color: #E0FBF4;
     font-family: 'Nunito', sans-serif;
