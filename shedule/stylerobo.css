@@ -59,7 +59,7 @@ nav{
     top: 0;
     z-index: 100;
     transition: 0.7s;
-
+    
     width:100vw;
     height:70px;
     background:#E0FBF4;
@@ -114,7 +114,7 @@ nav i{
     cursor: pointer;
     float: right;
     margin: 10px ;
-
+    
 }
 
 
@@ -183,7 +183,7 @@ a:hover{
 .right{
     display: flex;
     flex-wrap: wrap;
-
+    
 }
 .flex1{
     background-color: #001D1B;
@@ -232,4 +232,8 @@ footer div div a:hover{
     padding: 10px;
     background-color: #B6EDE0;
     color: black;
+}
+
+.wed , .thu , .fri{
+    display: none;
 }
