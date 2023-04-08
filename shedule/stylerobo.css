@@ -8,11 +8,13 @@ body{
     background-color: #EDFFFE;
 }
 main{
-    display: flex;
+    /* display: flex; */
     margin-top: 100px;
 }
 .left{
     margin: 40px;
+    display: flex;
+    justify-content: center;
 }
 .clicked{
     width: 100%;
@@ -58,11 +60,10 @@ nav{
     position: fixed;
     top: 0;
     z-index: 100;
-    transition: 0.7s;
+    /* transition: 0.7s; */
     
     width:100vw;
     height:70px;
-    background:#E0FBF4;
 }
 .nav1{
     position: fixed;
@@ -154,12 +155,21 @@ a:hover{
     background-color: #B6EDE0;
 }
 .verticle-line{
-    width: 3px;
-    height: 80vh;
-    margin: 40px; 
-    background: linear-gradient(rgb(101,206,180) , rgb(92,169,203));
+    width: 80vw;
+    height: 3px;
+    border-radius: 20px;
+    margin: 40px auto; 
+    background: linear-gradient(to right ,rgb(101,206,180) , rgb(92,169,203));
+    box-shadow:  rgb(92,169,203)  0px 0px 2px ;
 }
-
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(101,206,180) , rgb(92,169,203));
+    cursor: pointer;
+    border-radius: 20px;
+}
 .right .container{
     width: 140px;
     height: 100px;
@@ -183,6 +193,9 @@ a:hover{
 .right{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: 40px auto;
     
 }
 .flex1{

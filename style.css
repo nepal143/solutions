@@ -6,9 +6,10 @@ body{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 header{
-    height: calc(100vw*1044/1920);
+    padding-top: 100px;
 }
 .upper{
     position: absolute;
@@ -25,8 +26,23 @@ nav{
 
     width:100vw;
     height:70px;
-    background:#E0FBF4;
+    /* background:linear-gradient(); */
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(101,206,180) , rgb(92,169,203));
+    cursor: pointer;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(
+        rgb(92,169,203)
+        rgb(101,206,180) ,
+        ); 
+}
+
 .nav1{
     background-color:rgba(255, 255, 255, 0);
     border:solid #65CFB5;
@@ -83,7 +99,8 @@ nav{
     top: 0;
     width: 100vw;
     font-size: 0.8rem;
-    background: #E0FBF4;
+    /* background: #E0FBF4; */
+    background: linear-gradient(#d8fef4 ,#e0fbf49a, rgb(0,0,0,0));
 }
 
 nav ul a{
@@ -104,6 +121,7 @@ nav div a{
     color: #112A46;
     letter-spacing: 2px;
     border-radius: 40px;
+    transition: 0.1s;
     padding: 1%;
     /* font-size: 1.2vw; */
 }
@@ -130,19 +148,23 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     margin-top: 2%;
 }
-
+.union-container img{
+    width: 93vw;
+    
+}
+.union-container{
+    width: 100vw;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: -40px;
+    justify-content: center;
+    align-items: center;
+}
 .clicked{
     /* border: solid 0.1em white; */
     border-radius: 40px;
     background-color: #B6EDE0;
     padding: 0.5%;
-}
-::-webkit-scrollbar{
-    width: 12px;
-}
-::-webkit-scrollbar-thumb{
-    background:linear-gradient(rgb(101,206,180) , rgb(92,169,203));
-    border-radius: 20px;
 }
 @media screen and (max-width: 700px) {
     nav i{
@@ -168,8 +190,21 @@ a:hover{
     .list1{
         display: none;
     }
+    .uinon{
+        visibility: visible;
+        width:93vw;
+    }
     .title1{
-        margin-top: 10%;
+        font-size: 1em;
+    }
+    .title2{
+        font-size: 1em;
+    }
+    .solution-background-img{
+        display: none;
+    }
+    header{
+        height:100vh;
     }
     .stat1  img{
         display: none;
@@ -286,6 +321,7 @@ main{
 .container img{
     width: 150px;
 }
+
 .statistics{
     width: 100vw;
     background-color: #EDFFFE;
@@ -376,15 +412,13 @@ footer div div a:hover{
 .s1{
     padding-top: 30px;
     text-align: center;
-    height: 80px;
+    /* height: 80px; */
     transform: 0.4s;
     cursor: pointer;
 }
 
 
-.linear:hover{
-    scale: 104%;
-}
+
 #vec{
     margin-bottom: 0px;
 }
@@ -411,3 +445,6 @@ footer div div a:hover{
         /* position: relative; */
     }
 }
+
+
+

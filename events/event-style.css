@@ -12,7 +12,14 @@ body{
     font-family: istok;
     src: url(IstokWeb-Regular.ttf);
 }
-
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(101,206,180) , rgb(92,169,203));
+    cursor: pointer;
+    border-radius: 20px;
+}
 #sol{
     margin-top: 15px;
     height: 25px;
