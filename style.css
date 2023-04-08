@@ -10,6 +10,15 @@ body{
 }
 header{
     padding-top: 100px;
+    margin-top: -100vh;
+}
+#praticles-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
 }
 .upper{
     position: absolute;
@@ -138,7 +147,7 @@ a:hover{
     font-size: 2vw;
     color: #112A46;
     font-family: 'Poppins', sans-serif;
-    margin-top:8%   ;
+    /* margin-top:8%   ; */
 }
 .title2{
     display: flex;
@@ -146,10 +155,13 @@ a:hover{
     font-size: 2vw;
     color: #112A46;
     font-family: 'Poppins', sans-serif;
-    margin-top: 2%;
+    margin-top: 4%;
+    margin-bottom: 100px;
 }
 .union-container img{
+    z-index: 1;
     width: 93vw;
+    margin-bottom: 200px;
     
 }
 .union-container{
@@ -173,9 +185,6 @@ a:hover{
     .toggle-list{
         visibility: visible;
     }
-    /* nav .list{
-        margin-right: -10px;
-    } */
     nav{
         background-color:rgba(255, 255, 255, 0);
         border:solid #65CFB5;
@@ -191,6 +200,7 @@ a:hover{
         display: none;
     }
     .uinon{
+        z-index: 1 ;
         visibility: visible;
         width:93vw;
     }
@@ -200,11 +210,10 @@ a:hover{
     .title2{
         font-size: 1em;
     }
-    .solution-background-img{
-        display: none;
-    }
+
     header{
         height:100vh;
+        margin-top:-100vh ;
     }
     .stat1  img{
         display: none;
@@ -218,6 +227,10 @@ a:hover{
         display: flex;
         justify-content: center;
     }
+}
+#particles-js canvas{
+    width: 100vw;
+    height: 100vh;
 }
 .stat{
     width: 60%;
