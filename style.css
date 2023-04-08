@@ -136,6 +136,13 @@ a:hover{
     background-color: #B6EDE0;
     padding: 0.5%;
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(101,206,180) , rgb(92,169,203));
+    border-radius: 20px;
+}
 @media screen and (max-width: 700px) {
     nav i{
         visibility: visible;
@@ -146,9 +153,6 @@ a:hover{
     /* nav .list{
         margin-right: -10px;
     } */
-    header{
-        height:100vh;
-    }
     nav{
         background-color:rgba(255, 255, 255, 0);
         border:solid #65CFB5;
