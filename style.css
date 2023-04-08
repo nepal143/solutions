@@ -146,6 +146,9 @@ a:hover{
     /* nav .list{
         margin-right: -10px;
     } */
+    header{
+        height:100vh;
+    }
     nav{
         background-color:rgba(255, 255, 255, 0);
         border:solid #65CFB5;
