@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&family=Varela+Round&display=swap');
 body{
     background-color: #EDFFFE;
     margin: 0;
     z-index: 1;
+}
+*{
+    margin: 0;
+    padding: 0;     
 }
 
 #sol{
@@ -12,6 +17,54 @@ body{
     cursor: pointer;
 
     
+}
+.linear{
+    width: 240px;
+    height: 300px;
+    padding: 5px;
+    background: linear-gradient(to right, rgba(101, 207, 181, 0.767), rgba(92, 167, 204, 0.642)); 
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+.names , .post{
+    position: relative;
+    top: -240px;
+    left: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #112A46;
+}
+.linear img{
+    width: 150px;
+    border: solid 5px #E0FBF4;;
+    height: 150px;
+    position: relative;
+    top: -250px;
+    left: 65px;
+    border-radius: 50%;
+
+}
+.linear .links {
+    width: 20px;
+    position: relative;
+    left: 10px;
+    top: 0;
+}
+.linear .links i{
+    margin-top: 50px;
+}
+.linear:hover{
+    scale: 104%;
+    transition: 0.2s;
+}
+h3{
+    /* margin-top: -50px; */
+    margin-bottom: 20px;
+}
+.gadbad{
+    /* margin-top: 25px; */
 }
 ::-webkit-scrollbar{
     width: 12px;
@@ -30,18 +83,18 @@ nav{
     box-shadow: var(--light-shadow);
 }
 
-a:hover{
-    border-radius: 40px;
-    background-color: #B6EDE0;
-    padding: 0.5%;
-}
+    a:hover{
+        border-radius: 40px;
+        background-color: #B6EDE0;
+        padding: 0.5%;
+    }
 a{
-    margin: 10px 20px;
+    /* margin: 10px 20px; */
     font-weight: 600;
     text-decoration: none;
     color: #112A46;
-    letter-spacing: 2px;
-    border-radius: 40px;
+    /* letter-spacing: 2px;  */
+    /* border-radius: 40px; */
     padding: 0.5%;
 }
 .menu a{
@@ -113,12 +166,7 @@ button{
     cursor: pointer;
 }
 
-.flex{
-    background-color: #001D1B;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
+
 @media(max-width: 700px){
     nav a{
         display:none;
@@ -136,17 +184,7 @@ button{
         position:absolute;
     }
 }
-.grid{
-    background-color: #001D1B;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: auto; 
-     margin: auto  50px;
 
-    align-items: center;
-}
 
 .a{
     /* margin: 20px; */
@@ -161,9 +199,7 @@ h3{
 .flex1 img{
     transition: 0.2s;
 }
-.flex1 img:hover{
-    scale: 104%;
-}
+
 
 
 footer div div a{
@@ -176,7 +212,7 @@ footer div div a:hover{
     border-radius: 40px;
     background-color: #B6EDE0;
     padding: 10px;
-    color: black;
+    /* color: black; */
 }
 
 
@@ -184,5 +220,67 @@ footer div div a:hover{
     height: 100px;
     margin-bottom: 20px;
 }
+footer{
+    text-align: center;
+    width: 100vw;
+}
+.flex{
+    background-color: #001D1B;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.grid{
+    background-color: #001D1B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* height: auto; */
+    margin: auto  50px;
+    align-items: center;
+}
+
+.a{
+    /* margin: 20px; */
+    text-align: center;
+    color: #E0FBF4;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+}
+h3{
+    /* margin-top: -50px; */
+    margin-bottom: 20px;
+}
+
+
+footer div div a{
+    width: 200px;
+    font-size: 12px;
+    color: #E0FBF4;
+    text-decoration: none;
+}
+footer div div a:hover{
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #B6EDE0;
+    color: black;
+}
+.gadbad{
+    margin-top: 70px;
+}
+#vec{
+    margin-bottom: 0px;
+}
+
+
+
+#vec{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+
 
 

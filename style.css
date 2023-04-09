@@ -20,6 +20,13 @@ header{
     height: 100vh;
 
 }
+.techboard-icon{
+    width: 40px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
 .upper{
     position: absolute;
     width: 100vw;
@@ -128,6 +135,7 @@ nav div a{
     font-weight: 600;
     text-decoration: none;
     color: #112A46;
+    color: ;
     letter-spacing: 2px;
     border-radius: 40px;
     transition: 0.1s;
@@ -144,7 +152,8 @@ a:hover{
 .title1{
     display: flex;
     justify-content: center;
-    font-size: 2vw;
+    font-size: 2em;
+    text-align: center;
     color: #112A46;
     font-family: 'Poppins', sans-serif;
     /* margin-top:8%   ; */
@@ -152,15 +161,15 @@ a:hover{
 .title2{
     display: flex;
     justify-content: center;
-    font-size: 2vw;
+    font-size: 2em;
     color: #112A46;
     font-family: 'Poppins', sans-serif;
     margin-top: 4%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 .union-container img{
-    z-index: 1;
-    width: 93vw;
+    z-index: -1;
+    width: 53vw;
     margin-bottom: 200px;
     
 }
@@ -210,7 +219,9 @@ a:hover{
     .title2{
         font-size: 1em;
     }
-
+    .uinon-container img{
+        width: 100vw;
+    }
     header{
         height:100vh;
         margin-top:-100vh ;
@@ -242,10 +253,6 @@ a:hover{
     .solution{
         display: block;
         width: 100%;
-    }
-    .video{
-        display: block;
-        width:auto ;
     }
     
 
@@ -290,11 +297,17 @@ main{
     background:#E0FBF4;
  
 }
+.solution h2{
+    margin-left: 0;
+    text-align: center;
+}
 .solution p{
+    text-align: center;
     font-size: 0.8rem;
 }
 .video{
-    width: 49.6%;
+    width: 51%;
+    height: 400px;
 }
 .button{
     cursor: pointer;
@@ -308,7 +321,13 @@ main{
     font-family: 'Poppins', sans-serif;
     width: 80%;
 }
+.events h2{
+    /* text-align; */
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
 .events p{
+    text-align: center;
     font-size: .8rem;
 }   
 .grid{
@@ -322,10 +341,12 @@ main{
     margin: 20px;
     display: flex;
     justify-content: center;
-    padding: 8px 4px;
+    /* padding: 8px 8px; */
     width: 170px;
     height: 170px;
+    padding: 6px 6px;
     z-index: 0;
+    cursor: pointer;
     transition: 0.3s;
 }
 .container:hover{
@@ -333,6 +354,7 @@ main{
 }
 .container img{
     width: 150px;
+    
 }
 
 .statistics{
@@ -343,9 +365,11 @@ main{
     /* padding: 20px; */
     font-family: 'Poppins', sans-serif;
 }
+
 .statistics h2{
-    margin-left:10%;
+    margin-left:10%; 
     margin-bottom: 10px;
+     margin-top: 30px;
 }
 .main3{
     width: 80%;
@@ -377,6 +401,40 @@ main{
     background: linear-gradient(to right, rgb(101,207,181), rgb(92,167,204));    
     
 }
+
+.s1{
+    padding-top: 30px;
+    text-align: center;
+    /* height: 80px; */
+    transform: 0.4s;
+    /* cursor: pointer; */
+}
+
+
+
+
+@media(max-width:1000px) {
+    .main1 .solution{
+        /* display: block; */
+        width: 100%;
+        left:50px;
+        /* position:relative; */
+    }
+}
+@media(max-width:1000px){
+    .main1 .video{
+        /* display: block; */
+        width: 100%;
+        left:100px;
+        /* position: relative; */
+    }
+}
+
+
+footer{
+    text-align: center;
+    width: 100vw;
+}
 .flex1{
     background-color: #001D1B;
     align-items: center;
@@ -384,10 +442,7 @@ main{
     flex-wrap: wrap;
     
 }
-footer{
-    text-align: center;
-    width: 100vw;
-}
+
 .grid1{
     background-color: #001D1B;
     display: flex;
@@ -406,6 +461,7 @@ footer{
     margin-top: 20px;
 }
 h3{
+    /* margin-top: -50px; */
     margin-bottom: 20px;
 }
 
@@ -422,16 +478,9 @@ footer div div a:hover{
     background-color: #B6EDE0;
     color: black;
 }
-.s1{
-    padding-top: 30px;
-    text-align: center;
-    /* height: 80px; */
-    transform: 0.4s;
-    cursor: pointer;
+.gadbad{
+    margin-top: 70px;
 }
-
-
-
 #vec{
     margin-bottom: 0px;
 }
@@ -442,22 +491,5 @@ footer div div a:hover{
     height: 100px;
     margin-bottom: 20px;
 }
-@media(max-width:1000px) {
-    .main1 .solution{
-        /* display: block; */
-        width: 100%;
-        left:50px;
-        /* position:relative; */
-    }
-}
-@media(max-width:1000px){
-    .main1 .video{
-        /* display: block; */
-        width: 100%;
-        left:100px;
-        /* position: relative; */
-    }
-}
-
 
 

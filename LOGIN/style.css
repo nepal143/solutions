@@ -3,9 +3,12 @@
 body{
     font-family: 'Poppins', sans-serif; 
     background: #EDFFFE;
+    overflow-x: hidden;
 }
 .item
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif; 
 
 }
@@ -87,15 +90,13 @@ nav div a:hover{
         text-align: center;
         width: 100vw;
     }
-    #vec{
-        margin-bottom: 50px;
-    } 
     
  
 
     #vec{
         height: 100px;
-        margin-bottom: 0;
+        width: 100px;
+        margin-bottom: 50px;
     }
     .grid1{
         background-color: #001D1B;
@@ -281,6 +282,13 @@ h6{
 }
 .dont{
     display: flex;
+}
+.gadbad{
+    margin-top: 25px;
+}
+h3{
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
 .dont h5{
     color: #5CAACB;
