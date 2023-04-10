@@ -1,0 +1,278 @@
+body{
+    background-color: #EDFFFE;
+    margin: 0;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(Nunito-VariableFont_wght.ttf);
+  }
+
+@font-face {
+    font-family: istok;
+    src: url(IstokWeb-Regular.ttf);
+}
+
+#sol{
+    margin-top: 15px;
+    height: 25px;
+}
+
+.logo{
+    justify-content: left;
+    width: 600px;
+}
+
+nav div{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    justify-content: end;
+    background-color: #E0FBF4;
+}
+
+nav div a{
+    margin: 0.8% 1.8%;
+    text-decoration: none;
+    color: #112A46;
+    letter-spacing: 2px;
+    padding:5px;
+    font-size: 1.2vw;
+}
+
+
+.clicked{
+    border: solid 0.1em black;
+    border-radius: 40px;
+    padding: 0.5%;
+}
+
+@media(max-width:700px){
+    nav div a{
+        display: none;
+    }
+    #sol{
+        height: 20px;
+        width: 130px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+main h2{
+    font-family:nunito;
+    color: #5CA9CA;
+    font-size: 3.2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.events{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.events button{
+    margin: 6px;
+    border: solid 0.1em black;
+    background-color: transparent;
+    font-family:nunito;
+    font-size: 16px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: #E0FBF4;
+}
+
+p{
+    color: #525252;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.flex1{
+    background-color: #001D1B;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.grid1{
+    background-color: #001D1B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* height: auto; */
+    margin: auto  50px;
+    align-items: center;
+}
+
+.a{
+    margin: 20px;
+    text-align: center;
+    color: #E0FBF4;
+    font-family: nunito;
+    margin-top: 20px;
+}
+h3{
+    margin-bottom: 20px;
+}
+
+
+footer div div a{
+    width: 200px;
+    font-size: 12px;
+    color: #E0FBF4;
+    text-decoration: none;
+}
+footer div div a:hover{
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #B6EDE0;
+    color: black;
+}
+
+#vec{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* .grid{
+    background-color: #001D1B;
+    display: grid;
+    grid-template-columns: 460px 460px 460px;
+    grid-template-rows: 172px 172px;
+    row-gap: 5px;
+    column-gap: 5px;
+} */
+
+/* .a{
+    text-align: center;
+    color: #E0FBF4;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+} */
+
+/* 
+footer div a{
+    font-size: 12px;
+    color: #E0FBF4;
+    text-decoration: none;
+} */
+
+/* #vec{
+    height: 100px;
+
+} */
+
+.coding{
+    border: solid 0.2em #65CFB5;
+    display: flex;
+    margin: 20px 80px 20px 80px;
+    flex-wrap: wrap;
+}
+
+
+.one{
+    height: 280px;
+    width: 320px;
+    background-color: white;
+    margin: 50px 30px 30px 30px;
+    text-align: center;
+}
+
+@media (max-width:700px){
+    .one{
+        width: 180px;
+    }
+
+}
+
+#two{
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4{
+    font-family:istok;
+}
+
+.codered{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #5DABCA;
+}
+
+#para{
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif ;
+    text-align: left;
+    color: #5CA9CA;
+}
+
+#para1{
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif ;
+    margin-right: 10px;
+}
+
+.content{
+    margin: 10px 70px 10px 70px;
+}
+
+#Desc{
+    width: 1000px;
+    height: 420px;
+    border: solid 0.2em #65CFB5;
+    display:block;
+    box-shadow:0px -5px 8px #65CFB5 inset;
+}
+
+#regb{
+    position:relative;
+    font-size: 28px;
+    width: 200px;
+    padding: 2px 25px 2px 25px;
+    height: 40px;
+    left: 43%;
+    font-weight: 680;
+    font-family: 'Poppins', sans-serif ;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    text-decoration: none;
+    background: linear-gradient(90deg, #66CFB4, #5FB1C7 50%);
+}
+
+@media(max-width:700px){
+    
+    #regb{
+        left:28%;
+    } 
+    #Desc{
+        height: 880px;
+    }
+
+}
+
+#sc{
+    margin-top: 50px;
+}
+
+#reg:hover{
+    
+}
